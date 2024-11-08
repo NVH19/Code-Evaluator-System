@@ -1,9 +1,6 @@
-# mid-project-404344380
-mid-project-404344380 created by GitHub Classroom
+Hệ thống Thi Code Online
 
-Đề tài: Hệ thống Thi Code Online
-
-1. Mô tả chung
+1. Mô tả
 
 Hệ thống thi code online là một nền tảng cho phép người dùng tham gia các cuộc thi lập trình trực tuyến. Hệ thống sẽ cung cấp các bài toán lập trình, người dùng gửi mã nguồn và hệ thống sẽ tự động biên dịch và chấm điểm dựa trên các bộ test case được cung cấp. Hệ thống cũng hỗ trợ tính năng xếp hạng, thống kê kết quả, và quản lý người dùng.
 
@@ -55,12 +52,3 @@ Công nghệ:
 - Giao thức truyền tải: WebSocket hoặc HTTP/HTTPS.
 - Biên dịch mã: Sử dụng Docker để thực thi mã nguồn trong môi trường ảo hóa an toàn.
 
-
-
-Thành viên:
-
-B21DCCN404-Nguyễn Văn Huân
-
-B21DCCN344-Nguyễn Tiến Hiệp
-
-B21DCCN380-Nguyễn Văn Hòa
