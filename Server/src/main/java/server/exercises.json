@@ -1,0 +1,512 @@
+[
+  {
+    "exerciseId": "J01001",
+    "name": "HÌNH CHỮ NHẬT",
+    "description": "Cho độ dài hai cạnh của hình chữ nhật. Giá trị không quá 10^4.  \n\nViết chương trình tính chu vi và diện tích của hình chữ nhật đó. Nếu dữ liệu không hợp lệ (chiều dài hoặc chiều rộng ≤ 0 thì in ra số 0) \n\nInput\n\nCó duy nhất một dòng ghi hai số nguyên, cách nhau một khoảng trống.\n\nOutput\n\nIn kết quả trên một dòng, chu vi rồi đến diện tích, cách nhau một khoảng trống.\n\nVí dụ\n\nInput\tOutput\n\n10 2\t\t24 20\n\n \n\nGiới hạn thời gian: 1s\n\nGiới hạn bộ nhớ: 65536 Kb'",
+    "testCases": [
+      {
+        "input": "10 2",
+        "expectedOutput": "24 20"
+      },
+      {
+        "input": "5 5",
+        "expectedOutput": "20 25"
+      },
+      {
+        "input": "0 0",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "1 1",
+        "expectedOutput": "4 1"
+      },
+      {
+        "input": "10000 10000",
+        "expectedOutput": "40000 100000000"
+      },
+      {
+        "input": "10000 1",
+        "expectedOutput": "20002 10000"
+      },
+      {
+        "input": "1 10000",
+        "expectedOutput": "20002 10000"
+      },
+      {
+        "input": "10000 0",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "0 10000",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "10000 10000",
+        "expectedOutput": "40000 100000000"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01002",
+    "name": "TÍNH TỔNG N SỐ NGUYÊN DƯƠNG ĐẦU TIÊN",
+    "description": "Cho số nguyên dương N. \n\nHãy tính S = 1 + 2 + ... + N\n\nDữ liệu vào: \n\nMột số nguyên dương N, không quá 10^9\nKết quả:\n\nGhi kết quả trên một dòng.\n\nVí dụ:\n\nInput\tOutput\n\n10\t\t55\n\n  \n\nGiới hạn thời gian: 1s\n\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "10",
+        "expectedOutput": "55"
+      },
+      {
+        "input": "1",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "100",
+        "expectedOutput": "5050"
+      },
+      {
+        "input": "1000",
+        "expectedOutput": "500500"
+      },
+      {
+        "input": "10000",
+        "expectedOutput": "50005000"
+      },
+      {
+        "input": "100000",
+        "expectedOutput": "5000050000"
+      },
+      {
+        "input": "1000000",
+        "expectedOutput": "500000500000"
+      },
+      {
+        "input": "10000000",
+        "expectedOutput": "50000005000000"
+      },
+      {
+        "input": "100000000",
+        "expectedOutput": "5000000050000000"
+      },
+      {
+        "input": "1000000000",
+        "expectedOutput": "500000000500000000"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01003",
+    "name": "TÍNH TỔNG CÁC CHỮ SỐ",
+    "description": "Cho số nguyên dương N. \n\nHãy tính tổng các chữ số của số N\n\nDữ liệu vào: \n\nMột số nguyên dương N, không quá 10^9\nKết quả:\n\nGhi kết quả trên một dòng.\n\nVí dụ:\n\nInput\tOutput\n\n123\t\t6\n\n  \n\nGiới hạn thời gian: 1s\n\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "1",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "9",
+        "expectedOutput": "9"
+      },
+      {
+        "input": "10",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "123",
+        "expectedOutput": "6"
+      },
+      {
+        "input": "4567",
+        "expectedOutput": "22"
+      },
+      {
+        "input": "9999",
+        "expectedOutput": "36"
+      },
+      {
+        "input": "10000",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "987654321",
+        "expectedOutput": "45"
+      },
+      {
+        "input": "1000000000",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "2147483647",
+        "expectedOutput": "46"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01004",
+    "name": "TÍNH TỔNG CÁC ƯỚC SỐ",
+    "description": "Cho số nguyên dương N. \n\nHãy tính tổng các ước số của số N\n\nDữ liệu vào: \n\nMột số nguyên dương N, không quá 10^9\nKết quả:\n\nGhi kết quả trên một dòng.\n\nVí dụ:\n\nInput\tOutput\n\n6\t\t12\n\n  \n\nGiới hạn thời gian: 1s\n\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "1",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "2",
+        "expectedOutput": "3"
+      },
+      {
+        "input": "10",
+        "expectedOutput": "18"
+      },
+      {
+        "input": "16",
+        "expectedOutput": "31"
+      },
+      {
+        "input": "25",
+        "expectedOutput": "31"
+      },
+      {
+        "input": "36",
+        "expectedOutput": "91"
+      },
+      {
+        "input": "97",
+        "expectedOutput": "98"
+      },
+      {
+        "input": "100",
+        "expectedOutput": "217"
+      },
+      {
+        "input": "1000",
+        "expectedOutput": "2340"
+      },
+      {
+        "input": "1000000000",
+        "expectedOutput": "2497558336"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01005",
+    "name": "TÍNH TỔNG CÁC ƯỚC SỐ NGUYÊN TỐ",
+    "description": "Cho số nguyên dương N. \n\nHãy tính tổng các ước số nguyên tố của số N\n\nDữ liệu vào: \n\nMột số nguyên dương N, không quá 10^9\nKết quả:\n\nGhi kết quả trên một dòng.\n\nVí dụ:\n\nInput\tOutput\n\n6\t\t5\n\n  \n\nGiới hạn thời gian: 1s\n\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "1",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "2",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "10",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "16",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "25",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "36",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "97",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "100",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "1000",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "1000000000",
+        "expectedOutput": "5"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01006",
+    "name": "GIẢI PHƯƠNG TRÌNH BẬC NHẤT",
+    "description": "Phương trình bậc nhất là phương trình dạng ax + b = 0.\n\nViết chương trình nhập vào hệ số a,b là các số thực và thực hiện giải phương trình bậc nhất.\n\nNếu phương trình vô nghiệm thì in ra VN\nNếu phương trình có vô số nghiệm thì in ra VSN\nNếu phương trình có nghiệm duy nhất thì in ra với định dạng luôn 2 chữ số thập phân. \n\nInput\n\nChỉ có hai số thực a và b. \n\nOutput\n\nGhi ra kết quả theo yêu cầu.\n\nVí dụ\n\nInput\tOutput\n\n2 -1\t\t0.50\n\nGiới hạn thời gian: 2s\n\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "2 -1",
+        "expectedOutput": "0.50"
+      },
+      {
+        "input": "0 0",
+        "expectedOutput": "VSN"
+      },
+      {
+        "input": "0 5",
+        "expectedOutput": "VN"
+      },
+      {
+        "input": "1 -3",
+        "expectedOutput": "3.00"
+      },
+      {
+        "input": "-2 4",
+        "expectedOutput": "-2.00"
+      },
+      {
+        "input": "3.5 -7",
+        "expectedOutput": "2.00"
+      },
+      {
+        "input": "-1.5 3.0",
+        "expectedOutput": "2.00"
+      },
+      {
+        "input": "0 -1",
+        "expectedOutput": "VN"
+      },
+      {
+        "input": "5.25 -10.5",
+        "expectedOutput": "2.00"
+      },
+      {
+        "input": "-4.5 9.0",
+        "expectedOutput": "2.00"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01006",
+    "name": "SỐ NGUYÊN TỐ",
+    "description": "Viết chương trình kiểm tra một số nguyên dương có phải số nguyên tố hay không. Mỗi dòng nhập có một số nguyên dương không quá 9 chữ số. Kết quả in ra YES nếu đó là số nguyên tố, in ra NO nếu ngược lại.\n\nInput\n\n123456\n997\n111111111\n\nOutput\n\nNO\nYES\nNO\n\nGiới hạn thời gian: 2s\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "123456",
+        "expectedOutput": "NO"
+      },
+      {
+        "input": "997",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "111111111",
+        "expectedOutput": "NO"
+      },
+      {
+        "input": "2",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "4",
+        "expectedOutput": "NO"
+      },
+      {
+        "input": "31",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "99",
+        "expectedOutput": "NO"
+      },
+      {
+        "input": "999999937",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "1",
+        "expectedOutput": "NO"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01007",
+    "name": "CẮT ĐÔI",
+    "description": "Với một vài số nguyên dương có 1 chữ số, khi cắt đôi số đó theo chiều ngang và lấy nửa phía trên thì ta vẫn có một số nguyên. Cụ thể:\n\nSố 0 cắt đôi vẫn ra số 0\nSố 1 cắt đôi vẫn ra số 1\nSố 8 cắt đôi ra số 0\nSố 9 cắt đôi ra số 0\nCác số khác cắt đôi sẽ không hợp lệ.\nCho một số nguyên dương không quá 18 chữ số. Hãy in ra kết quả “cắt đôi” của số đó.\n\nNếu không hợp lệ thì ghi ra INVALID. Chú ý: nếu cắt đôi ra một dãy toàn 0 thì cũng được coi là không hợp lệ. Kết quả cắt đôi thì không tính chữ số 0 ở đầu.\n\nInput\nDòng đầu ghi số nguyên dương không quá 18 chữ số.\nOutput\nGhi ra kết quả tính toán\n\nVí dụ\nInput\tOutput\n1890\t\t1000\n3681\t\tINVALID\n8919\t\t10\n\nGiới hạn thời gian: 2s\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "1890",
+        "expectedOutput": "100"
+      },
+      {
+        "input": "3681",
+        "expectedOutput": "INVALID"
+      },
+      {
+        "input": "8919",
+        "expectedOutput": "INVALID"
+      },
+      {
+        "input": "1000",
+        "expectedOutput": "INVALID"
+      },
+      {
+        "input": "0",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "1",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "8",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "9",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "000000000000000000",
+        "expectedOutput": "INVALID"
+      },
+      {
+        "input": "123456789",
+        "expectedOutput": "INVALID"
+      },
+      {
+        "input": "100000000000000000",
+        "expectedOutput": "INVALID"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01008",
+    "name": "BỘI SỐ CHUNG - ƯỚC SỐ CHUNG",
+    "description": "Tìm bội số chung nhỏ nhất và ước số chung lớn nhất của hai số nguyên dương a, b.\n\nInput:\nDòng đầu tiên đưa vào hai số nguyên dương a, b.\nOutput:\nĐưa ra kết quả mỗi test theo từng dòng, mỗi dòng gồm hai số LCM và GCD của a và b, cách nhau một dấu cách.\n\nVí dụ\nInput\tOutput\n5 10\t\t10 5\n\n14 8\t\t56 2\n\nGiới hạn thời gian: 2s\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "5 10",
+        "expectedOutput": "10 5"
+      },
+      {
+        "input": "14 8",
+        "expectedOutput": "56 2"
+      },
+      {
+        "input": "10 5",
+        "expectedOutput": "10 5"
+      },
+      {
+        "input": "56 2",
+        "expectedOutput": "56 2"
+      },
+      {
+        "input": "12 15",
+        "expectedOutput": "60 3"
+      },
+      {
+        "input": "21 14",
+        "expectedOutput": "42 7"
+      },
+      {
+        "input": "1 100000000",
+        "expectedOutput": "100000000 1"
+      },
+      {
+        "input": "12345678 87654321",
+        "expectedOutput": "108972864 9"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01009",
+    "name": "SỐ LIỀN KỀ",
+    "description": "Viết chương trình kiểm tra số nguyên dương N có thỏa mãn tính chất: tất cả các chữ số cạnh nhau chỉ sai khác nhau đúng một đơn vị hay không.\n\nInput:\nDòng đầu ghi số nguyên dương N có ít nhất 2 chữ số, nhưng không quá 18 chữ số.\nOutput:\nGhi ra YES hoặc NO.\n\nVí dụ\nInput\t\tOutput\n123212\t\t\tYES\n5654345676\t\tYES\n10233211123\t\tNO\n\nGiới hạn thời gian: 1s\nGiới hạn bộ nhớ: 150000 Kb",
+    "testCases": [
+      {
+        "input": "123212",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "5654345676",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "10233211123",
+        "expectedOutput": "NO"
+      },
+      {
+        "input": "23452345",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "7890987",
+        "expectedOutput": "NO"
+      },
+      {
+        "input": "111222",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "123456789",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "987654321",
+        "expectedOutput": "YES"
+      },
+      {
+        "input": "12343123",
+        "expectedOutput": "NO"
+      },
+      {
+        "input": "24682468",
+        "expectedOutput": "YES"
+      }
+    ]
+  },
+  {
+    "exerciseId": "J01010",
+    "name": "XÂU NHỊ PHÂN",
+    "description": "Người ta tạo ra một dãy xâu ký tự nhị phân X[] trong đó:\n\nX[1] = “0”\n\nX[2] = “1”\n\nX[n] = X[n-2] + X[n-1] với n>2\n\nVới phép cộng (+) là phép nối hai xâu với nhau.\n\nCho hai số tự nhiên N và K (1<N<93; K đảm bảo trong phạm vi của xâu X[N]).\n\nHãy xác định ký tự thứ K trong xâu X[N] là ký tự ‘0’ hay ký tự ‘1’.\n\nInput:\nDòng 1 ghi số nguyên dương N và K.\n\nOutput:\nGhi ra ký tự thứ K trong xâu X[N].\n\nVí dụ:\nInput\tOutput\n6 4\t\t0\n8 19\t\t1\n\nGiới hạn thời gian: 2s\nGiới hạn bộ nhớ: 65536 Kb",
+    "testCases": [
+      {
+        "input": "6 4",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "8 19",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "5 3",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "10 55",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "7 9",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "9 34",
+        "expectedOutput": "0"
+      },
+      {
+        "input": "12 144",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "11 89",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "3 2",
+        "expectedOutput": "1"
+      },
+      {
+        "input": "4 3",
+        "expectedOutput": "0"
+      }
+    ]
+  }
+]
+

@@ -1,0 +1,26 @@
+/* lobby.css */
+
+* {
+    -fx-font-family: Arial, sans-serif; /* Phông chữ cho toàn bộ ứng dụng */
+}
+
+AnchorPane {
+    -fx-background-color: #F8F9FA; /* Màu nền của AnchorPane */
+}
+
+Text {
+    -fx-fill: #343A40; /* Màu chữ tối */
+}
+
+Button {
+    -fx-background-color: #007BFF; /* Màu nền nút */
+    -fx-text-fill: white; /* Màu chữ nút */
+    -fx-padding: 10 20; /* Khoảng đệm cho nút */
+    -fx-font-size: 14px; /* Kích thước phông chữ cho nút */
+    -fx-border-radius: 5; /* Bo góc cho nút */
+    -fx-background-radius: 5; /* Bo góc nền cho nút */
+}
+
+Button:hover {
+    -fx-background-color: #0056b3; /* Màu nền khi hover */
+}

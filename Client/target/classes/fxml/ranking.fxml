@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="596.0" prefWidth="905.0" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.RankingController">
+    <children>
+        <VBox prefHeight="598.0" prefWidth="188.0" style="-fx-background-color: #e63e2c;">
+            <children>
+                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="204.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white;" text="Danh sách">
+                    <graphic>
+                        <Group>
+                            <children>
+                                <SVGPath content="M40 48C26.7 48 16 58.7 16 72l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24L40 48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L192 64zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zM16 232l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0z" scaleX="0.03" scaleY="0.03" style="-fx-fill: white;" />
+                            </children>
+                        </Group>
+                    </graphic>
+                </Button>
+                <Button fx:id="exerciseButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2 0 2 0;" text="Bài tập">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="historyButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 0 0 2 0;" text="Lịch sử">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="rankingButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 0 0 2 0;" text="Bảng xếp hạng">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="logoutButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2 0 0 0;" text="Đăng xuất" translateY="404.0">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+        <Line endX="-20.000015258789062" endY="583.3333129882812" layoutX="208.0" layoutY="14.0" startX="-20.000015258789062" startY="-13.99999713897705" style="-fx: #e63e2c;" />
+        <Text layoutX="207.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảng xếp hạng">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <TableView fx:id="rankingTable" layoutX="209.0" layoutY="66.0" prefHeight="517.0" prefWidth="678.0">
+            <columns>
+                <TableColumn fx:id="idSvColumn" prefWidth="150.0" text="ID Sinh Viên" />
+                <TableColumn fx:id="nameColumn" prefWidth="220.0" text="Tên" />
+                <TableColumn fx:id="answerCorrectNumberColumn" prefWidth="200.0" text="Số câu trả lời đúng" />
+                <TableColumn fx:id="rankColumn" prefWidth="100.0" text="Hạng" />
+
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

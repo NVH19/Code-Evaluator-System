@@ -1,0 +1,15 @@
+/* login.css */
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: #CC3300;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.button-login {
+    -fx-background-color: #bb2019;
+    -fx-text-fill: #fdfdfd;
+}
+
+.svg-style {
+    -fx-fill: #ec555d;
+}

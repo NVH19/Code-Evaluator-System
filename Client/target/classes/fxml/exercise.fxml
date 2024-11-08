@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane prefHeight="596.0" prefWidth="905.0" stylesheets="@../css/home.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ExamController">
+    <children>
+        <VBox prefHeight="598.0" prefWidth="188.0" style="-fx-background-color: #e63e2c;">
+            <children>
+                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="204.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white;" text="Danh sách">
+                    <graphic>
+                        <Group>
+                            <children>
+                                <SVGPath content="M40 48C26.7 48 16 58.7 16 72l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24L40 48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L192 64zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zM16 232l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0z" scaleX="0.03" scaleY="0.03" style="-fx-fill: white;" />
+                            </children>
+                        </Group>
+                    </graphic>
+                </Button>
+                <Button fx:id="exerciseButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2 0 2 0;" text="Bài tập">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="historyButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 0 0 2 0;" text="Lịch sử">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="rankingButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 0 0 2 0;" text="Bảng xếp hạng">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="logoutButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="206.0" style="-fx-background-color: #e63e2c; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2 0 0 0;" text="Đăng xuất" translateY="404.0">
+                    <padding>
+                        <Insets left="27.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+        <Line endX="-20.000015258789062" endY="583.3333129882812" layoutX="208.0" layoutY="14.0" startX="-20.000015258789062" startY="-13.99999713897705" style="-fx: #e63e2c;" />
+        <!-- Scrollable Content Pane -->
+        <ScrollPane layoutX="188.0" prefHeight="598.0" prefWidth="718.0">
+            <content>
+                <VBox alignment="CENTER" spacing="15.0">
+                    <padding>
+                        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0" />
+                    </padding>
+                    <!-- Tên bài tập -->
+                    <Label fx:id="exerciseNameLabel" text="Tên bài tập" style="-fx-font-size: 16px;" />
+                    <!-- Mô tả bài tập -->
+                    <Label fx:id="exerciseDescriptionLabel" text="Mô tả bài tập" wrapText="true" prefWidth="600.0" style="-fx-font-size: 14px;" />
+                    <!-- Ô chọn ngôn ngữ và chọn file -->
+                    <HBox alignment="CENTER" spacing="10.0">
+                        <ChoiceBox fx:id="languageChoiceBox" prefHeight="30.0" prefWidth="150.0" />
+                        <Button fx:id="selectFileButton" mnemonicParsing="false" onAction="#handleSelectFile" prefHeight="30.0" prefWidth="100.0" text="Chọn file" />
+                        <Button fx:id="sendFileButton" mnemonicParsing="false" onAction="#handleSendFile" prefHeight="30.0" text="Gửi" />
+                    </HBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+    </children>
+
+</AnchorPane>

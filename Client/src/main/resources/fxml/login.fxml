@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.LoginController" stylesheets="@../css/login.css">
+    <children>
+        <AnchorPane prefHeight="278.0" prefWidth="164.0">
+            <children>
+                <TextField fx:id="usernameTextfield" layoutX="49.0" layoutY="102.0" prefHeight="25.0" prefWidth="163.0" promptText="User name" styleClass="text-field" />
+                <Button fx:id="loginButton" contentDisplay="CENTER" layoutX="86.0" layoutY="198.0" mnemonicParsing="false" text="Đăng nhập" styleClass="button-login" />
+                <ImageView fitHeight="55.0" fitWidth="45.0" layoutX="102.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/logo_ptit.png" />
+                    </image>
+                </ImageView>
+                <Line endX="1.6666259765625" endY="230.66665649414062" layoutX="247.0" layoutY="46.0" startX="1.6666259765625" startY="-45.999996185302734" />
+                <PasswordField fx:id="passwordField" layoutX="49.0" layoutY="147.0" prefHeight="25.0" prefWidth="163.0" promptText="Password" styleClass="text-field" />
+                <Pane layoutX="2.0" layoutY="2.0" prefHeight="27.0" prefWidth="25.0" />
+                <Group layoutX="-189.0" layoutY="-136.0">
+                    <children>
+                        <SVGPath content="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" scaleX="0.035" scaleY="0.035" styleClass="svg-style" />
+                    </children>
+                </Group>
+                <Group layoutX="-189.0" layoutY="-136.0">
+                    <children>
+                        <SVGPath content="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z" layoutY="44.0" scaleX="0.035" scaleY="0.035" styleClass="svg-style" />
+                    </children>
+                </Group>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="248.0" prefHeight="269.0" prefWidth="353.0">
+            <children>
+                <ImageView fitHeight="276.0" fitWidth="353.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/bg_right.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
+

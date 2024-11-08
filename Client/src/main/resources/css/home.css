@@ -1,0 +1,16 @@
+/* Định dạng cho header */
+.table-view .column-header {
+    -fx-background-color: #d0dbd4; /* Màu nền cho header */
+    -fx-text-fill: white; /* Màu chữ cho header */
+}
+
+/* Định dạng cho hàng */
+.table-view .table-row-cell {
+    -fx-background-color: transparent; /* Giữ nguyên màu nền cho các hàng khác */
+}
+
+/* Định dạng cho hàng được chọn */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #9bbfe0; /* Màu nền khi hàng được chọn */
+    -fx-text-fill: white; /* Màu chữ khi hàng được chọn */
+}
